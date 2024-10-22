@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Livre {
@@ -12,8 +12,6 @@ export class Livre {
     auteur: string;
 
     @Column()
-    genre: string;
-
-    @Column()
-    rating: number;
+    pages: number;
 }
+
